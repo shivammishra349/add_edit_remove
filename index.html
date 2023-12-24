@@ -1,0 +1,19 @@
+<html>
+        <form onsubmit="project(event)">
+            <label for="number">Choose expenseamount:</label>
+            <input type="number" name="num" id="num"><br><br>
+            <label for="expence-name">Choose description:</label>
+            <input type="text" name="expence" id="expance-name"><br><br>
+            <lanbel for="expence">Coose expance:</lanbel>
+            <select name="expence" id="expence">
+                <option value="fuel">fuel</option>
+                <option value="food">food</option>
+                <option value="electricity">electricity</option>
+                <option value="movie">movie</option>
+            </select><br><br>
+            <input type="submit" value="Add expence">
+        </form>
+        <ul id="listOfItem"></ul>
+    
+    <script src="index.js"> </script>
+</html>
