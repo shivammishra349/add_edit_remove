@@ -9,6 +9,7 @@ function project(event){
     name:item
     
    }
+   
    localStorage.setItem(number,JSON.stringify(obj));
    showuser(obj)
 }
