@@ -9,9 +9,16 @@ function project(event){
     name:item
     
    }
-   
-   localStorage.setItem(number,JSON.stringify(obj));
-   showuser(obj)
+   axios.post("https://crudcrud.com/api/cbd93a6cd6544a79b5f71a949da42b39/AppoinmentApp",obj)
+    .then((res)=>{
+        showUserOnScreen(res.data)  
+        console.log(res.data)
+    })
+    .then((err)=>{
+        console.log(err)
+    })
+   //localStorage.setItem(number,JSON.stringify(obj));
+   //showuser(obj)
 }
 function showuser(obj){
     let parent=document.getElementById('listOfItem');
